@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:orientation="vertical" android:theme="@android:style/Theme.Dialog" android:background="@drawable/bar_gray" android:layout_height="500dp" android:layout_gravity="center_horizontal">
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow2">
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/txtAddRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:height="400dp"
+                android:inputType="textMultiLine"
+                android:isScrollContainer="true"
+                android:textSize="22dp" android:scrollbars="vertical" android:lines="10" android:gravity="top"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout android:id="@+id/tableLayout4" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/tableRow13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TableLayout android:id="@+id/tableLayout3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Button android:width="150px" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Ok" android:layout_marginLeft="10dp" android:id="@+id/btnOkRemarks" android:textSize="17dp"></Button>
+                    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnCancelRemarks" android:text="Cancel" android:width="150px" android:textSize="17dp"></Button>
+                </TableRow>
+            </TableLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

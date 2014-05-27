@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@drawable/bgentry">
+	<TableLayout android:layout_width="match_parent"
+		android:id="@+id/tableLayout5" android:layout_height="wrap_content"
+		android:background="@drawable/bar_gray">
+		<TableRow android:layout_height="wrap_content" android:id="@+id/tableRow14"
+			android:baselineAligned="false" android:layout_width="match_parent">
+			<ImageView android:layout_height="wrap_content" android:id="@+id/imageView1"
+				android:src="@drawable/study_variate" android:layout_width="wrap_content"
+				android:layout_gravity="left"></ImageView>
+			<TextView android:textColor="#000000" android:textSize="22dp"
+				android:layout_height="wrap_content" android:text="PN_2011_MAY"
+				android:layout_width="wrap_content" android:id="@+id/txtStudyName"
+				android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+				android:layout_gravity="center_vertical"></TextView>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:layout_gravity="right"
+			android:baselineAligned="false" android:background="@drawable/line2">
+		</TableRow>
+	</TableLayout>
+	<TableLayout android:id="@+id/tableLayout1"
+		android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginTop="20dp" android:background="@drawable/ricebar">
+		<TableRow android:id="@+id/tableRow2" android:layout_width="match_parent" android:baselineAligned="false" android:layout_weight="1" android:layout_height="0dp">
+			<TextView android:id="@+id/textView2" android:layout_height="wrap_content" android:textColor="#000000" android:text="Variate" android:textSize="17dp"></TextView>
+			<TextView android:id="@+id/textView1" android:text="TextView" android:textColor="#000000" android:textSize="17dp"></TextView>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow7" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="0dp">
+			<TextView android:id="@+id/TextView01" android:textSize="17dp" android:layout_height="wrap_content" android:text="Description" android:textColor="#000000"></TextView>
+			<TextView android:text="TextView" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#000000" android:textSize="17dp"></TextView>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow6" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="0dp">
+			<TextView android:id="@+id/TextView02" android:layout_height="wrap_content" android:textColor="#000000" android:text="Property" android:textSize="17dp"></TextView>
+			<TextView android:text="TextView" android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#000000" android:textSize="17dp"></TextView>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow5" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="0dp">
+			<TextView android:layout_weight="1" android:id="@+id/TextView03" android:layout_height="wrap_content" android:layout_width="0dp" android:layout_gravity="right" android:textColor="#000000" android:text="Scale" android:textSize="17dp"></TextView>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow3">
+			<TextView android:id="@+id/TextView04" android:textColor="#000000" android:text="Minimum" android:textSize="17dp"></TextView>
+			<EditText android:id="@+id/editText2" android:inputType="numberDecimal"></EditText>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow10" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="0dp">
+			<TextView android:id="@+id/TextView05" android:textColor="#000000" android:text="Maximum" android:textSize="17dp"></TextView>
+			<EditText android:id="@+id/editText1" android:inputType="numberDecimal">
+				<requestFocus></requestFocus>
+			</EditText>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow9" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="0dp">
+			<TextView android:id="@+id/TextView06" android:textColor="#000000" android:text="DataType" android:textSize="17dp"></TextView>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow8" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="0dp">
+		</TableRow>
+		<TableRow android:layout_gravity="right" android:id="@+id/tableRow4" android:background="@drawable/line4" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="0dp">
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

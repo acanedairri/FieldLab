@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bar_gray"
+    android:gravity="top" >
+
+	<CheckBox android:id="@+id/check" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignParentRight="true"></CheckBox>
+	<EditText android:id="@+id/txtmin" android:layout_height="wrap_content" android:layout_alignBottom="@+id/spinnerDataType" android:layout_toLeftOf="@+id/txtmax" android:layout_width="100dp" android:width="150dp" android:inputType="number|numberDecimal" android:textSize="22px"></EditText>
+	<EditText android:id="@+id/txtmax" android:layout_height="wrap_content" android:layout_alignTop="@+id/txtmin" android:layout_toLeftOf="@+id/check" android:width="100dp" android:layout_width="100dp" android:inputType="number|numberDecimal" android:textSize="22px">
+		<requestFocus></requestFocus>
+	</EditText>
+	<Spinner android:layout_height="wrap_content" android:id="@+id/spinnerDataType" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_toLeftOf="@+id/txtmin" android:prompt="@string/variate_datatype_spinner_prompt"></Spinner>
+	<TableLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_below="@+id/txtmin" android:layout_alignParentLeft="true" android:id="@+id/tableVariateInfo" android:layout_marginTop="10dp" android:visibility="visible">
+		<TableRow android:layout_height="wrap_content" android:id="@+id/tableRow1" android:layout_width="wrap_content">
+			<TextView android:textColor="#000000" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_marginLeft="30dp" android:textStyle="normal" android:text="Property :" android:textSize="20px"></TextView>
+			<TextView android:layout_height="wrap_content" android:text="TextView" android:layout_width="wrap_content" android:textColor="#000000" android:id="@+id/txtproperty" android:layout_marginLeft="5dp" android:textSize="20px" android:textStyle="normal"></TextView>
+		</TableRow>
+		<TableRow android:layout_height="wrap_content" android:id="@+id/tableRow2" android:layout_width="wrap_content">
+			<TextView android:textColor="#000000" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView2" android:layout_marginLeft="30dp" android:textStyle="normal" android:text="Scale :" android:textSize="20px"></TextView>
+			<TextView android:layout_height="wrap_content" android:text="TextView" android:layout_width="wrap_content" android:id="@+id/txtscale" android:textColor="#000000" android:layout_marginLeft="5dp" android:textSize="20px" android:textStyle="normal"></TextView>
+		</TableRow>
+		<TableRow android:layout_height="wrap_content" android:id="@+id/tableRow3" android:layout_width="wrap_content">
+			<TextView android:textColor="#000000" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView3" android:layout_marginLeft="30dp" android:textStyle="normal" android:text="Method :" android:textSize="20px"></TextView>
+			<TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtMethod" android:textColor="#000000" android:layout_marginLeft="5dp" android:textSize="20px" android:textStyle="normal"></TextView>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:layout_marginLeft="30dp" android:layout_width="wrap_content" android:id="@+id/TextView01" android:textColor="#000000" android:layout_height="wrap_content" android:textStyle="normal" android:text="Scoring :" android:textSize="20px"></TextView>
+			<TextView android:layout_marginLeft="5dp" android:layout_width="wrap_content" android:textColor="#000000" android:layout_height="wrap_content" android:text="TextView" android:id="@+id/txtScoring" android:textSize="20px" android:textStyle="normal"></TextView>
+		</TableRow>
+		<TableRow android:layout_height="wrap_content" android:id="@+id/tableRow4" android:layout_width="wrap_content">
+		</TableRow>
+	</TableLayout>
+
+	<TextView
+	    android:id="@+id/txtVariateCode"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:text="@+id/txtVariateCode"
+	    android:textColor="#000000"
+	    android:textSize="20px"
+	    android:textStyle="bold" >
+
+</TextView>
+	
+</RelativeLayout>
+
+

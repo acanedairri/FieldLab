@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_gray"
+    android:gravity="center_vertical" >
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" >
+    </CheckBox>
+
+    <TableLayout
+        android:id="@+id/tableVariateInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_marginTop="40dp"
+        android:visibility="visible" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Property :"
+                android:textColor="#000000"
+                android:textSize="20px"
+                android:textStyle="normal" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtproperty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="20px"
+                android:textStyle="normal" >
+            </TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Scale :"
+                android:textColor="#000000"
+                android:textSize="20px"
+                android:textStyle="normal" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtscale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="20px"
+                android:textStyle="normal" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Method :"
+                android:textColor="#000000"
+                android:textSize="20px"
+                android:textStyle="normal" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="20px"
+                android:textStyle="normal" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txtDataType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/check"
+        android:layout_alignBottom="@+id/check"
+        android:layout_marginRight="126dp"
+        android:layout_toLeftOf="@+id/check"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/txtVariateCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtDataType"
+        android:layout_alignBottom="@+id/txtDataType"
+        android:layout_marginLeft="10dp"
+        android:text="@+id/txtVariateCode"
+        android:textColor="#000000"
+        android:textSize="20px"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.irri.fieldlab.activity"
+    android:versionCode="2"
+    android:versionName="2.9" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:debuggable="false"
+        android:icon="@drawable/ic_ricelogo"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoadStudyActivity"
+            android:label="Load Study"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".OpenStudyActivity"
+            android:label="Select Study"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".StudyListActivity"
+            android:label="Select a Study to Open" />
+        <activity
+            android:name=".DataEntryFormSingleActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Observation Data Entry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DataEntryFormContinuousActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Observation Data Entry" />
+        <activity
+            android:name=".StudyDataMenuActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MaintenanceActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Maintenance" />
+        <activity
+            android:name=".ImportWorkbookActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Import Workbook" />
+        <activity
+            android:name=".FileChooserActivity"
+            android:label="Select File"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".VariateLookUpValuesActivity"
+            android:label="Choose a look up value" />
+        <activity
+            android:name=".ExportStudyActivity"
+            android:label="Export Data"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Data Entry Setting" />
+        <activity
+            android:name=".DataEntrySettingsActivity"
+            android:label="Data Entry Settings" />
+        <activity
+            android:name=".DescriptionVariateActivity"
+            android:label="Variate" />
+        <activity
+            android:name=".DescriptionFactorActivity"
+            android:label="Factor" />
+        <activity
+            android:name=".DescriptionFactorVariateActivity"
+            android:label="Factor and Variate" />
+        <activity
+            android:name=".DescriptionConditionActivity"
+            android:label="Condition" />
+        <activity
+            android:name=".DescriptionConstantActivity"
+            android:label="Constant" />
+        <activity
+            android:name=".StudyMenuActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".VariateEditActivity"
+            android:label="Edit Study Variate" />
+        <activity
+            android:name=".ObservationActivity"
+            android:label="Browse/Edit Observation Data" />
+        <activity
+            android:name=".HelpActivity"
+            android:label="FieldLab Help" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="About FieldLab" />
+        <activity
+            android:name=".RemarksActivity"
+            android:label="Remarks"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".RangeInputActivity"
+            android:label="Ranges Input"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".ImportObservationActivity"
+            android:label="Import Observation Data"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".CreateFieldBookStudyMainActivity"
+            android:label="Create FieldBook - Study Metadata " />
+        <activity android:name=".CreateFieldbookStudyDescriptionActivity" />
+        <activity android:name=".CreateFieldbookStudyAgronomicActivity" />
+        <activity android:name=".CreateFieldbookStudyLayoutActivity" />
+        <activity
+            android:name=".CreateFieldbookSiteMainActivity"
+            android:label="Create FieldBook - Site Information " />
+        <activity android:name=".CreateFieldbookSiteDescriptionActivity" />
+        <activity android:name=".CreateFieldbookSiteSoilActivity" />
+        <activity android:name=".CreateFieldbookSiteClimaticActivity" />
+        <activity
+            android:name=".CreateFieldBookDefineTraitActivity"
+            android:label="Create FieldBook - Select Trait" />
+        <activity
+            android:name=".CreateFieldBookImportFileActivity"
+            android:label="Create FieldBook - Load Genotype Information and Layout" />
+        <activity
+            android:name=".PhotoCaptureActivity"
+            android:label="Photo Capture" />
+        <activity
+            android:name=".BarcodeScannerConnectActivity"
+            android:label="Connect to Barcode Reader"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".CalendarViewActivity"
+            android:label="Calendar"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".StudyDescriptionTabMainActivity"
+            android:label="Study Description" />
+        <activity
+            android:name=".ImageZoomActivity"
+            android:label="Study Description" />
+        <activity
+            android:name=".ImageListViewActivity"
+            android:label="Study Description" />
+        <activity
+            android:name=".AudioRecordingActivityTest"
+            android:label="Audio Recording" />
+        <activity
+            android:name=".ScoringMorphoActivity"
+            android:label="Scoring" />
+        <activity
+            android:name=".AudioRecordingActivity"
+            android:label="Audio Recording" />
+        <activity
+            android:name=".AddVariateActivity"
+            android:label="Add New Variate" />
+    </application>
+
+</manifest>

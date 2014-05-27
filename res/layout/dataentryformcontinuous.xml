@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bar_gray"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp" >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/white" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/lblSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Goto"
+                        android:textColor="#000000"
+                        android:textSize="22dp" />
+
+                    <EditText
+                        android:id="@+id/txtSearchValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:hint="Search"
+                        android:minWidth="10dp"
+                        android:width="100dp" />
+
+                    <EditText
+                        android:id="@+id/txtPage"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="p."
+                        android:width="100dp" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/btnSearch"
+                        android:background="@drawable/search1"
+                        android:hint="Search"
+                        android:maxWidth="60px"
+                        android:text=" "
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnClose"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/closedataentry"
+                        android:maxWidth="48px"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:width="48px" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/btnTakePhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/camera2" />
+
+                    <Button
+                        android:id="@+id/btnRecordAudio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/microphone" />
+
+                    <Button
+                        android:id="@+id/btnPrevious"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="50dp"
+                        android:background="@drawable/previouspage" />
+
+                    <Button
+                        android:id="@+id/btnNext"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/nextpage" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayoutColumHeader"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/black"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/lblRecordRef"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:text="recref"
+                            android:textColor="#000000"
+                            android:textSize="22px" />
+
+                        <TextView
+                            android:id="@+id/lblPage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:text="TextView"
+                            android:textSize="22px" />
+
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowLabelPage"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/green_dark"
+            android:gravity="center_horizontal|left" >
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TableRow
+                            android:id="@+id/tableRow7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/btnViewImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/image"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/txtReference"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/bar_gray"
+                                android:text="0000"
+                                android:textColor="#000000"
+                                android:textSize="50dp" android:visibility="gone"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/lblImageCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="(3)"
+                                android:textColor="#FFFFFF"
+                                android:textSize="22dp"
+                                android:visibility="gone" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/tableFactors"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                    </TableLayout>
+                </TableRow>
+
+            </TableLayout>
+
+        </TableRow>
+    </TableLayout>
+
+    <HorizontalScrollView
+
+        android:id="@+id/HorizontalScrollViewColumnHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutColumnHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txtTraitDesciption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+        </TableRow>
+    </TableLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollViewData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:id="@+id/ScrollView01"
+            android:layout_width="fill_parent"
+            android:layout_height="700px"
+            android:layout_gravity="top"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.22" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayoutDataEntry"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </TableRow>
+            </LinearLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+
+</LinearLayout>

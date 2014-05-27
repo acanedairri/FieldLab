@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="280dp"
+    android:background="@drawable/bar_gray"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Dialog" android:layout_gravity="center_horizontal">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.10" >
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/lblAction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Select Option"
+                android:textColor="#000000" android:textSize="16dp" android:textStyle="bold"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Spinner
+                android:id="@+id/spinnerExportOption"
+                android:layout_width="match_parent"
+                android:layout_weight="1" android:prompt="@string/export_study_spinner_prompt"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/txtVariateSelected"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="textMultiLine"
+                android:lines="3">
+
+                <requestFocus />
+            </EditText>
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/lblMessageDoubleTap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Double tap this Textbox to Add/Changes Variate selected" android:textColor="#000000"/>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnEportStudy"
+                android:layout_weight="1"
+                android:text="Export" />
+
+            <Button
+                android:id="@+id/btnExportClose"
+                android:layout_weight="1"
+                android:text="Cancel" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

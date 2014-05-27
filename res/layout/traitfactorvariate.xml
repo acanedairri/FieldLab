@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bar_gray"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayoutHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/blue2" >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:id="@+id/lblHeaderOne"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:text="Factor and Variate"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:text="Data Type"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/lblHeaderTwo"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:text="Min"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="5dp"
+                android:text="Max"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:text="Visible"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@android:id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6.08" >
+    </ListView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+
+            android:baselineAligned="false" >
+
+            <Button
+                android:id="@+id/btnAddVariate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Add Variate"
+                android:textSize="17dp"
+                android:visibility="gone"
+                android:width="150dp" />
+
+            <Button
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Close" android:width="150dp"/>
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

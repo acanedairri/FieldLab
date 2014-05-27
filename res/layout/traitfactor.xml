@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_gray"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayoutHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/green2" >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/green2"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:id="@+id/lblHeaderOne"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:text="Factor"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" android:background="@drawable/green2">
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblHeaderTwo"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:text="Datatype"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" android:background="@drawable/green2">
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/green2"
+                android:text="Visible "
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" android:layout_marginLeft="100dp"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@android:id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="966dp" >
+
+    </ListView>
+
+</LinearLayout>
