@@ -4,7 +4,7 @@ import android.os.Environment;
 
 public class FieldLabPath {
 
-	public static String AppPath=Environment.getExternalStorageDirectory().getAbsolutePath()+"/FieldLab-V2.9";
+	public static String AppPath=Environment.getExternalStorageDirectory().getAbsolutePath()+"/FieldLab-V2.10";
 	//static String AppPath=Environment.getExternalStorageDirectory().getAbsolutePath()+"/external_sd/FieldLab";
 	public  static String STUDY_FOLDER=AppPath+"/study/";
 	public  static String DEFAULT_FOLDER=AppPath+"/default/";

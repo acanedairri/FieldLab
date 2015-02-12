@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">FieldLab V2.9</string>
+    <string name="app_name">FieldLab V2.10</string>
     <string name="loadstudy">Load Study</string>
     <string name="openstudy">Open Study</string>
     <string name="vmaintenance">Maintenance</string>
