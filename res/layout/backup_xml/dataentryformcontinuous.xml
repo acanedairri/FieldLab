@@ -15,7 +15,8 @@
         <TableRow
             android:id="@+id/tableRow2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:background="@drawable/white" >
 
             <TableLayout
@@ -151,8 +152,8 @@
 
         <TableRow
             android:id="@+id/tableRowLabelPage"
- 			android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:background="@drawable/green_dark"
             android:gravity="center_horizontal|left" >
 
@@ -234,13 +235,13 @@
     <HorizontalScrollView
 
         android:id="@+id/HorizontalScrollViewColumnHeader"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="38dp" >
 
         <LinearLayout
             android:id="@+id/LinearLayoutColumnHeader"
             android:layout_width="fill_parent"
-        	android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:orientation="vertical" >
         </LinearLayout>
     </HorizontalScrollView>
@@ -252,8 +253,8 @@
 
         <TableRow
             android:id="@+id/tableRow9"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
 
             <TextView
                 android:id="@+id/txtTraitDesciption"
@@ -268,32 +269,32 @@
 
     <HorizontalScrollView
         android:id="@+id/HorizontalScrollViewData"
-    	android:layout_width="match_parent"
-    	android:layout_height="wrap_content"	 >
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
 
         <ScrollView
             android:id="@+id/ScrollView01"
-    		android:layout_width="match_parent"
-    		android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="700px"
             android:layout_gravity="top"
             android:layout_marginTop="5dp"
             android:layout_weight="0.22" >
 
             <LinearLayout
                 android:id="@+id/linearLayout3"
- 				android:layout_width="fill_parent"
-        		android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical" >
 
                 <TableRow
                     android:id="@+id/tableRow1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
 
                     <LinearLayout
                         android:id="@+id/LinearLayoutDataEntry"
                         android:layout_width="fill_parent"
-       					android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="horizontal" >
                     </LinearLayout>

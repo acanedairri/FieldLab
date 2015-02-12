@@ -397,7 +397,16 @@ public class DataEntryFormSingleActivity extends Activity{
 	protected void searchRecord(String valueBarcode) {
 		//		Toast.makeText(getBaseContext(),"String search value  " +String.valueOf(valueBarcode.trim()), Toast.LENGTH_SHORT).show();
 		saveRecord();
-		int newRecId=observationManager.searchRecordByField(barcodeReference,valueBarcode.trim());
+		String[] valueSearch=txtSearchValue.getText().toString().split(";");
+		String searchString;
+		if (valueSearch.length > 1){
+			searchString=valueSearch[valueSearch.length-1];
+		}else{
+			searchString=valueSearch[0];
+		}
+		
+		System.out.println(valueBarcode);
+		int newRecId=observationManager.searchRecordByField(barcodeReference,searchString.trim());
 
 		if(newRecId==0){
 			txtSearchValue.setText(null);

@@ -198,8 +198,8 @@ public class DataEntryFormContinuousActivity extends Activity{
 
 	//Settings
 	private static int TEXT_SIZE=27;
-	private static int FACTOR_TEXT_WIDTH=100;
-	private static int VARIATE_TEXT_WIDTH=120;
+	private static int FACTOR_TEXT_WIDTH=400;
+	private static int VARIATE_TEXT_WIDTH=300;
 	private static final Pattern numberPattern = Pattern.compile( "(-|\\+)?[0-9]+(\\.[0-9]+)?");
 	private static DateFormat dateFormat;
 
@@ -638,16 +638,25 @@ public class DataEntryFormContinuousActivity extends Activity{
 	}
 
 	protected void searchRecord(String valueBarcode) {
+		
+		String[] valueSearch=txtFieldSearchValue.getText().toString().split(";");
+		String searchString;
+		if (valueSearch.length > 1){
+			searchString=valueSearch[valueSearch.length-1];
+		}else{
+			searchString=valueSearch[0];
+		}
+		
 
 		if(barcodeReference.equals("")){
 			Toast.makeText(getBaseContext(),"Please set barcode column reference on setting menu ", Toast.LENGTH_SHORT).show();
 		}else{
-			newRecId=observationManager.searchRecordByField(barcodeReference,valueBarcode.trim());
+			newRecId=observationManager.searchRecordByField(barcodeReference,searchString.trim());
 			if(newRecId==0){
-				Toast.makeText(getBaseContext(),"Record not found " +barcodeReference + " "+ valueBarcode, Toast.LENGTH_SHORT).show();
+				Toast.makeText(getBaseContext(),"Record not found " +barcodeReference + " "+ searchString, Toast.LENGTH_SHORT).show();
 			}else{
 				//			Toast.makeText(getBaseContext(),String.valueOf(newRecId) + " "+String.valueOf(numRec) , Toast.LENGTH_SHORT).show();
-				valueOfSearchRecord = observationManager.getSearchRecordByField(barcodeReference,valueBarcode.trim());
+				valueOfSearchRecord = observationManager.getSearchRecordByField(barcodeReference,searchString.trim());
 				firstSearch=false;
 				if(newRecId < numRec){
 					startLimit=1;
@@ -889,9 +898,11 @@ public class DataEntryFormContinuousActivity extends Activity{
 		TableLayout tableLayout = new TableLayout(this);
 		//tableLayout.setPadding(1, 0, 0, 1);
 		tableLayout.setStretchAllColumns(true);
+
 		//int noOfRows = count / 2;
 		int noOfColumn = fieldCount;
 		tableLayout.addView(createDataEntryRow(noOfColumn,obs));
+		tableLayout.invalidate();
 		return tableLayout;
 	}
 
@@ -998,7 +1009,7 @@ public class DataEntryFormContinuousActivity extends Activity{
 		dataEntryTextField.setSingleLine();
 		
 		if(datatype.equals("CD")){
-			dataEntryTextField.setWidth(160);
+			dataEntryTextField.setWidth(VARIATE_TEXT_WIDTH + 150);
 		}else{
 			dataEntryTextField.setWidth(VARIATE_TEXT_WIDTH);
 		}
@@ -1285,7 +1296,6 @@ public class DataEntryFormContinuousActivity extends Activity{
 
 		if(txtValue.contains("REC#")){
 			txtView.setTextColor(Color.GRAY);
-			txtView.setWidth(180);
 		}else{
 			txtView.setTextColor(Color.WHITE);
 		}
